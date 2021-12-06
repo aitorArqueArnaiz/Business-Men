@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Vueling.API/Vueling.API.csproj", "Vueling.API/"]
-RUN dotnet restore "Vueling.API/Vueling.API.csproj"
+COPY ["BusinessMan.API/BusinessMan.API.csproj", "BusinessMan.API/"]
+RUN dotnet restore "BusinessMan.API/BusinessMan.API.csproj"
 COPY . .
-WORKDIR "/src/Vueling.API"
-RUN dotnet build "Vueling.API.csproj" -c Release -o /app/build
+WORKDIR "/src/BusinessMan.API"
+RUN dotnet build "BusinessMan.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Vueling.API.csproj" -c Release -o /app/publish
+RUN dotnet publish "BusinessMan.API.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Vueling.API.dll"]
+ENTRYPOINT ["dotnet", "BusinessMan.API.dll"]

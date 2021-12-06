@@ -2,14 +2,14 @@
 using Moq;
 using NUnit.Framework;
 using System.Net;
-using Vueling.API.Controllers;
-using Vueling.API.DTOs;
-using Vueling.Domain.ApiRest_Client;
-using Vueling.Domain.Interfaces;
-using Vueling.Domain.Services;
-using Vueling.Infrastructure.Repository;
+using BusinessMan.API.Controllers;
+using BusinessMan.API.DTOs;
+using BusinessMan.Domain.ApiRest_Client;
+using BusinessMan.Domain.Interfaces;
+using BusinessMan.Domain.Services;
+using BusinessMan.Infrastructure.Repository;
 
-namespace Vueling.IntegrationTest
+namespace BusinessMan.IntegrationTest
 {
     public class IntegrationTest
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Vueling.Infrastructure.Repository
+namespace BusinessMan.Infrastructure.Repository
 {
     public interface IRepository
     {

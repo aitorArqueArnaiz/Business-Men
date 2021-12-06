@@ -1,5 +1,5 @@
 ﻿
-namespace Vueling.API.DTOs
+namespace BusinessMan.API.DTOs
 {
     public class GetAllTransactionsRequest
     {

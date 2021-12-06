@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using Vueling.Domain.ApiRest_Client;
-using Vueling.Domain.Entities;
-using Vueling.Domain.Interfaces;
-using Vueling.Infrastructure.Repository;
-using static Vueling.Domain.Shared.Enums;
+using BusinessMan.Domain.ApiRest_Client;
+using BusinessMan.Domain.Entities;
+using BusinessMan.Domain.Interfaces;
+using BusinessMan.Infrastructure.Repository;
+using static BusinessMan.Domain.Shared.Enums;
 
-namespace Vueling.Domain.Services
+namespace BusinessMan.Domain.Services
 {
     public class RateService : IRateService
     {
@@ -40,7 +40,7 @@ namespace Vueling.Domain.Services
         /// <returns></returns>
         private string CreateInsertRatesSQlQuery(List<Rate> rates)
         {
-            string result = @"INSERT INTO [Vueling].[dbo].[Rates] " +
+            string result = @"INSERT INTO [BusinessMan].[dbo].[Rates] " +
                             "([originCurrency],[targetCurrency],[Rate]) " +
                             "VALUES ";
             foreach (Rate rate in rates)
@@ -57,7 +57,7 @@ namespace Vueling.Domain.Services
         /// <returns></returns>
         private string DeleteRatesSQLQuery()
         {
-            return "DELETE FROM [Vueling].[dbo].[Rates]";
+            return "DELETE FROM [BusinessMan].[dbo].[Rates]";
         }
     }
 }

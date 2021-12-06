@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Vueling.Domain.Entities;
+using BusinessMan.Domain.Entities;
 
-namespace Vueling.Domain.Interfaces
+namespace BusinessMan.Domain.Interfaces
 {
     public interface ITransactionService
     {

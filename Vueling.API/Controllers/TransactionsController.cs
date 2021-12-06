@@ -2,10 +2,10 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
-using Vueling.API.DTOs;
-using Vueling.Domain.Interfaces;
+using BusinessMan.API.DTOs;
+using BusinessMan.Domain.Interfaces;
 
-namespace Vueling.API.Controllers
+namespace BusinessMan.API.Controllers
 {
     [ApiController]
     [Route("api/v1/vueling/")]

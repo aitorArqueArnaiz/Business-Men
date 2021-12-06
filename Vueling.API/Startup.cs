@@ -5,12 +5,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Vueling.Domain.ApiRest_Client;
-using Vueling.Domain.Interfaces;
-using Vueling.Domain.Services;
-using Vueling.Infrastructure.Repository;
+using BusinessMan.Domain.ApiRest_Client;
+using BusinessMan.Domain.Interfaces;
+using BusinessMan.Domain.Services;
+using BusinessMan.Infrastructure.Repository;
 
-namespace Vueling.API
+namespace BusinessMan.API
 {
     public class Startup
     {
@@ -28,7 +28,7 @@ namespace Vueling.API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Vueling.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "BusinessMan.API", Version = "v1" });
             });
 
             // Add framework services.
@@ -55,7 +55,7 @@ namespace Vueling.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Vueling.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BusinessMan.API v1"));
             }
 
             app.UseHttpsRedirection();

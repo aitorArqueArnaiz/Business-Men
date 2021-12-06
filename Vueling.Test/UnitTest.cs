@@ -1,13 +1,13 @@
 using Moq;
 using NUnit.Framework;
 using System.Collections.Generic;
-using Vueling.Domain.ApiRest_Client;
-using Vueling.Domain.Entities;
-using Vueling.Domain.Interfaces;
-using Vueling.Domain.Services;
-using Vueling.Infrastructure.Repository;
+using BusinessMan.Domain.ApiRest_Client;
+using BusinessMan.Domain.Entities;
+using BusinessMan.Domain.Interfaces;
+using BusinessMan.Domain.Services;
+using BusinessMan.Infrastructure.Repository;
 
-namespace Vueling.Test
+namespace BusinessMan.Test
 {
     public class UnitTests
     {

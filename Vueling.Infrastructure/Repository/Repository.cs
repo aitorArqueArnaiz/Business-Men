@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 
-namespace Vueling.Infrastructure.Repository
+namespace BusinessMan.Infrastructure.Repository
 {
     public class Repository : IRepository
     {
@@ -22,7 +22,7 @@ namespace Vueling.Infrastructure.Repository
             }
             else
             {
-                this.connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Vueling;"
+                this.connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=BusinessMan;"
                     + "Integrated Security=true;";
             }
         }

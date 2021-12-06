@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Vueling.Domain.Entities;
+using BusinessMan.Domain.Entities;
 
-namespace Vueling.API.DTOs
+namespace BusinessMan.API.DTOs
 {
     public class GetAllTransactionsResponse
     {

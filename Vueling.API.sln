@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.API", "Vueling.API\Vueling.API.csproj", "{6B758C6C-B86A-49C3-BC99-647595AE857B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessMan.API", "Vueling.API\BusinessMan.API.csproj", "{6B758C6C-B86A-49C3-BC99-647595AE857B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Domain", "Vueling.Domain\Vueling.Domain.csproj", "{7C099A14-C99C-4D65-9E9E-B3DE1A94531B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessMan.Domain", "Vueling.Domain\BusinessMan.Domain.csproj", "{7C099A14-C99C-4D65-9E9E-B3DE1A94531B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Test", "Vueling.Test\Vueling.Test.csproj", "{F390FCA3-D537-491B-BA03-A7C8A4655147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessMan.Test", "Vueling.Test\BusinessMan.Test.csproj", "{F390FCA3-D537-491B-BA03-A7C8A4655147}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A3314803-7E66-437B-A7B1-5AD9C572891B}"
 EndProject
@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Vueling_log.ldf = Vueling_log.ldf
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vueling.Infrastructure", "Vueling.Infrastructure\Vueling.Infrastructure.csproj", "{BA11D84B-B450-49C3-831E-DBF5AD2C481E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessMan.Infrastructure", "Vueling.Infrastructure\BusinessMan.Infrastructure.csproj", "{BA11D84B-B450-49C3-831E-DBF5AD2C481E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

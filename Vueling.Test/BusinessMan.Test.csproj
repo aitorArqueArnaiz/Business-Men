@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Vueling.API\Vueling.API.csproj" />
+    <ProjectReference Include="..\Vueling.API\BusinessMan.API.csproj" />
   </ItemGroup>
 
 </Project>

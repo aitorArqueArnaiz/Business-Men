@@ -1,5 +1,5 @@
 ﻿
-namespace Vueling.Domain.Shared
+namespace BusinessMan.Domain.Shared
 {
     public class Enums
     {

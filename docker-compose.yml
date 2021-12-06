@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY-}vuelingapi
     build:
       context: .
-      dockerfile: Vueling.API/Dockerfile
+      dockerfile: BusinessMan.API/Dockerfile

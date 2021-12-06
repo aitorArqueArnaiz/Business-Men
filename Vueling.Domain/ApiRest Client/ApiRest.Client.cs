@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Xml;
-using Vueling.Domain.Entities;
-using Transaction = Vueling.Domain.Entities.Transaction;
+using BusinessMan.Domain.Entities;
+using Transaction = BusinessMan.Domain.Entities.Transaction;
 
-namespace Vueling.Domain.ApiRest_Client
+namespace BusinessMan.Domain.ApiRest_Client
 {
     public static class ApiRestClient
     {

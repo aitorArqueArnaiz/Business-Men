@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Vueling.API": {
+    "BusinessMan.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

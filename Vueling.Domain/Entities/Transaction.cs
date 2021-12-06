@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Vueling.Domain.Entities
+namespace BusinessMan.Domain.Entities
 {
     public class Transaction
     {

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using Vueling.Domain.ApiRest_Client;
-using Vueling.Domain.Entities;
-using Vueling.Domain.Interfaces;
-using Vueling.Infrastructure.Repository;
-using static Vueling.Domain.Shared.Enums;
+using BusinessMan.Domain.ApiRest_Client;
+using BusinessMan.Domain.Entities;
+using BusinessMan.Domain.Interfaces;
+using BusinessMan.Infrastructure.Repository;
+using static BusinessMan.Domain.Shared.Enums;
 
-namespace Vueling.Domain.Services
+namespace BusinessMan.Domain.Services
 {
     public class TransactionService : ITransactionService
     {
@@ -113,7 +113,7 @@ namespace Vueling.Domain.Services
             List<List<Transaction>> ListOfChunks = SplitIntoChunks(transactions, 1000);
             foreach (List<Transaction> transactionsOfThousend in ListOfChunks)
             {
-                string sSql = @"INSERT INTO [Vueling].[dbo].[Transactions] " +
+                string sSql = @"INSERT INTO [BusinessMan].[dbo].[Transactions] " +
                 "([sku],[currency],[amount]) " +
                 "VALUES ";
 
@@ -131,7 +131,7 @@ namespace Vueling.Domain.Services
         /// <returns></returns>
         private string DeleteTransactionsSQLQuery()
         {
-            return "DELETE FROM [Vueling].[dbo].[Transactions]";
+            return "DELETE FROM [BusinessMan].[dbo].[Transactions]";
         }
 
         /// <summary>

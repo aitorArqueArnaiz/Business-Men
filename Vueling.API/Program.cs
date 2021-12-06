@@ -1,10 +1,11 @@
+using BusinessMan.API;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.IO;
 using System.Text;
 
-namespace Vueling.API
+namespace BusinessMan.API
 {
     public class Program
     {
@@ -17,7 +18,7 @@ namespace Vueling.API
             if (!File.Exists(path))
             {
                 // Create a file to write to.
-                string createText = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Vueling;"
+                string createText = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=BusinessMan;"
                                     + "Integrated Security=true;" + Environment.NewLine;
                 File.WriteAllText(path, createText, Encoding.UTF8);
             }
