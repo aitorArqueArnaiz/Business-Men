@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vueling.api:
+    image: ${DOCKER_REGISTRY-}vuelingapi
+    build:
+      context: .
+      dockerfile: Vueling.API/Dockerfile

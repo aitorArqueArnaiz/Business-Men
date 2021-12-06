@@ -1,0 +1,9 @@
+.vs
+obj
+.git
+
+Vueling.Domain/bin
+Vueling.Test/bin
+Vueling.API/bin
+bin
+obj
