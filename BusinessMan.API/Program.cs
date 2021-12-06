@@ -18,7 +18,7 @@ namespace BusinessMan.API
             if (!File.Exists(path))
             {
                 // Create a file to write to.
-                string createText = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=BusinessMan;"
+                string createText = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Vueling;"
                                     + "Integrated Security=true;" + Environment.NewLine;
                 File.WriteAllText(path, createText, Encoding.UTF8);
             }

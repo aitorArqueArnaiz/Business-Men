@@ -40,7 +40,7 @@ namespace BusinessMan.Domain.Services
         /// <returns></returns>
         private string CreateInsertRatesSQlQuery(List<Rate> rates)
         {
-            string result = @"INSERT INTO [BusinessMan].[dbo].[Rates] " +
+            string result = @"INSERT INTO [Vueling].[dbo].[Rates] " +
                             "([originCurrency],[targetCurrency],[Rate]) " +
                             "VALUES ";
             foreach (Rate rate in rates)
@@ -57,7 +57,7 @@ namespace BusinessMan.Domain.Services
         /// <returns></returns>
         private string DeleteRatesSQLQuery()
         {
-            return "DELETE FROM [BusinessMan].[dbo].[Rates]";
+            return "DELETE FROM [Vueling].[dbo].[Rates]";
         }
     }
 }

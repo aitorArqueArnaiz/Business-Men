@@ -113,7 +113,7 @@ namespace BusinessMan.Domain.Services
             List<List<Transaction>> ListOfChunks = SplitIntoChunks(transactions, 1000);
             foreach (List<Transaction> transactionsOfThousend in ListOfChunks)
             {
-                string sSql = @"INSERT INTO [BusinessMan].[dbo].[Transactions] " +
+                string sSql = @"INSERT INTO [Vueling].[dbo].[Transactions] " +
                 "([sku],[currency],[amount]) " +
                 "VALUES ";
 
@@ -131,7 +131,7 @@ namespace BusinessMan.Domain.Services
         /// <returns></returns>
         private string DeleteTransactionsSQLQuery()
         {
-            return "DELETE FROM [BusinessMan].[dbo].[Transactions]";
+            return "DELETE FROM [Vueling].[dbo].[Transactions]";
         }
 
         /// <summary>

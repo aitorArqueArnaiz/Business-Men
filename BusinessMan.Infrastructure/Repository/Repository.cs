@@ -22,7 +22,7 @@ namespace BusinessMan.Infrastructure.Repository
             }
             else
             {
-                this.connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=BusinessMan;"
+                this.connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Vueling;"
                     + "Integrated Security=true;";
             }
         }
