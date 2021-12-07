@@ -9,7 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		DDD And steps for implemetation.doc = DDD And steps for implemetation.doc
-		Instructions.md = Instructions.md
 		README.md = README.md
 		Vueling.mdf = Vueling.mdf
 		Vueling_log.ldf = Vueling_log.ldf
